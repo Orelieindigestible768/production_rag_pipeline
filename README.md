@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="src/production_rag_pipeline/image/image.png" alt="Production RAG Pipeline" height="">
+  <img src="src/production_rag_pipeline/image/image.png" alt="Production RAG Pipeline">
 </p>
 
 # Production RAG Pipeline
