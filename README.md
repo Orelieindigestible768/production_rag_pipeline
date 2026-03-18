@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="src/production_rag_pipeline/image/image.png" alt="Production RAG Pipeline" height="150">
+</p>
+
 # Production RAG Pipeline
 
 A Python library that gives any local LLM free access to web search — like Perplexity, but self-hosted and without API costs.
