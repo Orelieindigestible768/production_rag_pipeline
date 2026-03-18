@@ -5,9 +5,7 @@ A Python library that gives any local LLM free access to web search — like Per
 Searches Bing + DuckDuckGo, filters noise before fetching, extracts clean content, reranks by relevance, and outputs a complete LLM-ready prompt with inline citations. Plug it into Ollama, LM Studio, or any LLM API and get cited, structured answers from the internet.
 
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![PyPI](https://img.shields.io/badge/pypi-v1.0.0-blue.svg)](https://pypi.org/project/production-rag-pipeline/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Sentence Transformers](https://img.shields.io/badge/sentence--transformers-supported-orange.svg)](https://www.sbert.net/)
 [![LLM Ready](https://img.shields.io/badge/output-LLM--ready%20prompts-purple.svg)](#how-it-works)
 
