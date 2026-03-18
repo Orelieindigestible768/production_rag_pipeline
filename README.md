@@ -4,6 +4,8 @@
 
 # Production RAG Pipeline
 
+## Free Perplexity-style search for local sLLM
+
 A Python library that gives any local LLM free access to web search — like Perplexity, but self-hosted and without API costs.
 
 Searches Bing + DuckDuckGo, filters noise before fetching, extracts clean content, reranks by relevance, and outputs a complete LLM-ready prompt with inline citations. Plug it into Ollama, LM Studio, or any LLM API and get cited, structured answers from the internet.
