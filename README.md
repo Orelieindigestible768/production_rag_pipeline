@@ -6,15 +6,15 @@
   <strong>Free Perplexity-style search for local sLLM</strong>
 </p>
 
-A Python library that gives any local LLM web search with Perplexity-style answers, but self-hosted and without API costs or limits.
+A library for building search pipelines for local LLMs that produce Perplexity-style answers, but self-hosted and without API costs or limits.
 
 Searches Bing + DuckDuckGo, filters noise before fetching, extracts clean content, reranks by relevance, and outputs a complete LLM-ready prompt with inline citations. Plug it into Ollama, LM Studio, or any LLM API and get cited, structured answers from the internet.
 
-[![Python](https://img.shields.io/badge/python-3.8+-5f6b7a.svg)](https://www.python.org/downloads/)
+[![Python](https://img.shields.io/badge/python-3.8+-c7ced6.svg?style=flat)](https://www.python.org/downloads/)
 [![CI](https://github.com/KazKozDev/production_rag_pipeline/actions/workflows/ci.yml/badge.svg)](https://github.com/KazKozDev/production_rag_pipeline/actions/workflows/ci.yml)
-[![License](https://img.shields.io/badge/license-MIT-6b7a6a.svg)](LICENSE)
-[![Sentence Transformers](https://img.shields.io/badge/sentence--transformers-supported-8a7f6b.svg)](https://www.sbert.net/)
-[![LLM Ready](https://img.shields.io/badge/output-LLM--ready%20prompts-6f7285.svg)](#how-it-works)
+[![License](https://img.shields.io/badge/license-MIT-c9d1c8.svg?style=flat)](LICENSE)
+[![Sentence Transformers](https://img.shields.io/badge/sentence--transformers-supported-d6d0c5.svg?style=flat)](https://www.sbert.net/)
+[![LLM Ready](https://img.shields.io/badge/output-LLM--ready%20prompts-c9cad6.svg?style=flat)](#how-it-works)
 
 ---
 
