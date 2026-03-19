@@ -19,11 +19,29 @@ Searches Bing + DuckDuckGo, filters noise before fetching, extracts clean conten
 
 ## Table of Contents
 
-|  |  |  |  |  |
-| --- | --- | --- | --- | --- |
-| [How It Works](#how-it-works) | [Key Features](#key-features) | [Package Overview](#package-overview) | [Requirements](#requirements) | [Installation](#installation) |
-| [Quick Start](#quick-start) | [Output Example](#output-example) | [Public API](#public-api) | [Example Pipeline Usage](#example-pipeline-usage) | [Configuration](#configuration) |
-| [Design Notes](#design-notes) | [Development](#development) | [Community](#community) |  |  |
+<table>
+  <tr>
+    <td><a href="#how-it-works">How It Works</a></td>
+    <td><a href="#key-features">Key Features</a></td>
+    <td><a href="#package-overview">Package Overview</a></td>
+    <td><a href="#requirements">Requirements</a></td>
+    <td><a href="#installation">Installation</a></td>
+  </tr>
+  <tr>
+    <td><a href="#quick-start">Quick Start</a></td>
+    <td><a href="#output-example">Output Example</a></td>
+    <td><a href="#public-api">Public API</a></td>
+    <td><a href="#example-pipeline-usage">Example Pipeline Usage</a></td>
+    <td><a href="#configuration">Configuration</a></td>
+  </tr>
+  <tr>
+    <td><a href="#design-notes">Design Notes</a></td>
+    <td><a href="#development">Development</a></td>
+    <td><a href="#community">Community</a></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
 
 ## How It Works
 
