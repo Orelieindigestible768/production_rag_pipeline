@@ -79,8 +79,6 @@ Auto-detects language by Cyrillic character ratio (10% threshold) and switches m
 
 Failed fetches excluded from context. Boilerplate, navigation, ads, and newsletter patterns filtered. Citation numbers always match actual sources — no phantom `[4]`, `[5]` references when only 3 sources exist.
 
----
-
 <p align="center">
   <img src="src/production_rag_pipeline/image/voronka" alt="Context-Aware Content Detection illustration">
 </p>
