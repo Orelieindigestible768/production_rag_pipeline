@@ -10,11 +10,11 @@ A library for building search pipelines for local LLMs that produce Perplexity-s
 
 Searches Bing + DuckDuckGo, filters noise before fetching, extracts clean content, reranks by relevance, and outputs a complete LLM-ready prompt with inline citations. Plug it into Ollama, LM Studio, or any LLM API and get cited, structured answers from the internet.
 
-[![Python](https://img.shields.io/badge/python-3.8%2B-b79aa8.svg?style=flat&labelColor=5f4a5a)](https://www.python.org/downloads/)
-[![CI](https://img.shields.io/github/actions/workflow/status/KazKozDev/production_rag_pipeline/ci.yml?style=flat&label=CI&labelColor=5f4a5a&color=c7acb8)](https://github.com/KazKozDev/production_rag_pipeline/actions/workflows/ci.yml)
-[![License](https://img.shields.io/badge/license-MIT-c8b1b5.svg?style=flat&labelColor=5f4a5a)](LICENSE)
-[![Sentence Transformers](https://img.shields.io/badge/sentence--transformers-supported-d4c0c8.svg?style=flat&labelColor=5f4a5a)](https://www.sbert.net/)
-[![LLM Ready](https://img.shields.io/badge/output-LLM--ready%20prompts-d8cad2.svg?style=flat&labelColor=5f4a5a)](#how-it-works)
+[![Python](https://img.shields.io/badge/python-3.8%2B-b893a3.svg?style=flat&labelColor=5f4a5a)](https://www.python.org/downloads/)
+[![CI](https://img.shields.io/github/actions/workflow/status/KazKozDev/production_rag_pipeline/ci.yml?style=flat&label=CI&labelColor=5f4a5a&color=c7a5b1)](https://github.com/KazKozDev/production_rag_pipeline/actions/workflows/ci.yml)
+[![License](https://img.shields.io/badge/license-MIT-cdb0b1.svg?style=flat&labelColor=5f4a5a)](LICENSE)
+[![Sentence Transformers](https://img.shields.io/badge/sentence--transformers-supported-d7c0c7.svg?style=flat&labelColor=5f4a5a)](https://www.sbert.net/)
+[![LLM Ready](https://img.shields.io/badge/output-LLM--ready%20prompts-decfd4.svg?style=flat&labelColor=5f4a5a)](#how-it-works)
 
 
 ## Table of Contents
