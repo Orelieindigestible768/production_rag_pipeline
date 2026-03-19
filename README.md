@@ -174,7 +174,7 @@ macOS launcher:
 
 The launcher bootstraps `.venv` automatically and installs missing dependencies on first run, so it is a convenient entry point for local manual testing on macOS.
 
----
+
 
 ## Output Example
 
@@ -251,7 +251,7 @@ context, source_mapping, grouped_sources = build_llm_context(
 )
 ```
 
----
+
 
 ## Configuration
 
@@ -299,7 +299,7 @@ Key behaviors:
 - no hardcoded trusted-domain whitelist
 - no hardcoded dated few-shot examples in prompt generation
 
----
+
 
 ## Development
 
@@ -322,7 +322,6 @@ python -m build
 
 For contribution workflow, branch expectations, and review checklist, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
----
 
 ## Community
 
