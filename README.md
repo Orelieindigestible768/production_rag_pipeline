@@ -50,7 +50,6 @@ flowchart TD
     J --> K["LLM Prompt<br/>clean sources + warnings"]
 ```
 
----
 
 ## Key Features
 
@@ -331,7 +330,7 @@ For contribution workflow, branch expectations, and review checklist, see [CONTR
 - [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for participation expectations
 - [SECURITY.md](SECURITY.md) for vulnerability reporting
 - [Issues](https://github.com/KazKozDev/production_rag_pipeline/issues) for bugs and feature requests
-- 
+
 ---
 
 If you like this project, please give it a star ⭐
