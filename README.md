@@ -11,32 +11,45 @@ A Python library that gives any local LLM free access to web search — like Per
 Searches Bing + DuckDuckGo, filters noise before fetching, extracts clean content, reranks by relevance, and outputs a complete LLM-ready prompt with inline citations. Plug it into Ollama, LM Studio, or any LLM API and get cited, structured answers from the internet.
 
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![CI](https://github.com/KazKozDev/production_rag_pipeline/actions/workflows/ci.yml/badge.svg)](https://github.com/KazKozDev/production_rag_pipeline/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Sentence Transformers](https://img.shields.io/badge/sentence--transformers-supported-orange.svg)](https://www.sbert.net/)
 [![LLM Ready](https://img.shields.io/badge/output-LLM--ready%20prompts-purple.svg)](#how-it-works)
 
 ---
 
+## Table of Contents
+
+- [How It Works](#how-it-works)
+- [Key Features](#key-features)
+- [Package Overview](#package-overview)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Quick Start](#quick-start)
+- [Output Example](#output-example)
+- [Public API](#public-api)
+- [Example Pipeline Usage](#example-pipeline-usage)
+- [Configuration](#configuration)
+- [Design Notes](#design-notes)
+- [Development](#development)
+- [Community](#community)
+
+---
+
 ## How It Works
 
-```
-Query → Language Detection → Search Engines (Bing + DDG)
-   ↓
-Semantic Pre-Filter (embeddings, threshold 0.25–0.30)
-   ↓ (11/20 filtered)
-Parallel Fetch (10 workers, 12s timeout)
-   ↓
-Content Quality Check (structure + semantic relevance)
-   ↓
-Chunking (semantic topic-based, 600 chars)
-   ↓
-Hybrid Reranking (BM25 + Semantic + Cross-encoder)
-   ↓
-Freshness Penalties (news queries: −2 for >30 days, −1 for >7 days)
-   ↓
-Context Building (filter ghosts, sync references, add warnings)
-   ↓
-LLM Prompt (clean sources + outdated warnings)
+```mermaid
+flowchart TD
+    A["Query"] --> B["Language Detection"]
+    B --> C["Search Engines (Bing + DDG)"]
+    C --> D["Semantic Pre-Filter<br/>threshold 0.25-0.30"]
+    D --> E["Parallel Fetch<br/>10 workers, 12s timeout"]
+    E --> F["Content Quality Check"]
+    F --> G["Chunking<br/>semantic topic-based, 600 chars"]
+    G --> H["Hybrid Reranking<br/>BM25 + Semantic + Cross-encoder"]
+    H --> I["Freshness Penalties<br/>news queries only"]
+    I --> J["Context Building"]
+    J --> K["LLM Prompt<br/>clean sources + warnings"]
 ```
 
 ---
@@ -102,6 +115,18 @@ The pipeline is designed to degrade gracefully:
 
 ---
 
+## Requirements
+
+- Python 3.8+
+- macOS, Linux, or Windows for the Python package itself
+- internet access for live search and page fetching
+- optional model downloads on first semantic run (`sentence-transformers`)
+- optional Hugging Face token for higher model download rate limits
+
+If you use only the base install, the pipeline still works with lexical fallbacks. Semantic reranking and richer extraction become available when optional extras are installed.
+
+---
+
 ## Installation
 
 ```bash
@@ -143,6 +168,43 @@ production-rag-pipeline "latest AI news"
 production-rag-pipeline "Bitcoin price" --mode search
 production-rag-pipeline "новости ИИ" --mode read --lang ru
 ```
+
+macOS launcher:
+
+```bash
+./run_llm_query.command
+```
+
+The launcher bootstraps `.venv` automatically and installs missing dependencies on first run, so it is a convenient entry point for local manual testing on macOS.
+
+---
+
+## Output Example
+
+Example of the generated prompt shape:
+
+```text
+CURRENT DATE: 2026-03-18 20:06:55 (Wednesday)
+
+QUESTION: bitcoin rate
+
+SOURCES:
+[1] Bitcoin price today, BTC to USD live price, marketcap and chart ...
+...
+
+WRITING REQUIREMENTS:
+1. Use only the provided sources.
+2. Organize the answer with clear `##` headings.
+3. Cite every factual claim with `[N]`.
+
+ANSWER FORMAT:
+[Detailed answer with inline citations]
+
+## Источники:
+[1] Source Title — URL
+```
+
+The final output is designed to be dropped directly into a local LLM, preserving source grounding and a strict citation format.
 
 ---
 
@@ -244,11 +306,31 @@ Key behaviors:
 
 ## Development
 
-Basic verification:
+Local setup:
 
 ```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -e '.[full]'
+```
+
+Verification:
+
+```bash
+python -m unittest discover -s tests -v
 python -m compileall src
 ```
+
+For contribution workflow, branch expectations, and review checklist, see [CONTRIBUTING.md](CONTRIBUTING.md).
+
+---
+
+## Community
+
+- [CONTRIBUTING.md](CONTRIBUTING.md) for contribution workflow and local setup
+- [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for participation expectations
+- [SECURITY.md](SECURITY.md) for vulnerability reporting
+- [Issues](https://github.com/KazKozDev/production_rag_pipeline/issues) for bugs and feature requests
 
 ---
 
@@ -256,4 +338,4 @@ If you like this project, please give it a star ⭐
 
 For questions, feedback, or support, reach out to:
 
-[Artem KK](https://www.linkedin.com/in/kazkozdev/) | MIT [LICENSE](LICENSE)
+[Issues](https://github.com/KazKozDev/production_rag_pipeline/issues) | [Artem KK](https://www.linkedin.com/in/kazkozdev/) | MIT [LICENSE](LICENSE)
