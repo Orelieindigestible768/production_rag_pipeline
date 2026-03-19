@@ -181,24 +181,69 @@ Example of the generated prompt shape:
 This is an example of the final prompt text produced by the Python library for the query `курс биткоина` before you send it to a local LLM.
 
 ```text
-CURRENT DATE: 2026-03-18 20:06:55 (Wednesday)
+CURRENT DATE: 2026-03-18 20:06:44 (Wednesday)
+WRITING REQUIREMENTS:
+1. Use only the provided sources.
+2. Organize the answer with clear `##` headings.
+3. Cite every factual claim with `[N]`.
+4. For news queries, prioritize sources from the last 7 days.
+5. If sources conflict, describe both versions clearly.
+6. Include concrete details: dates, names, numbers, prices, locations, and percentages when available.
+7. Use all relevant sources instead of relying on only one or two.
+8. End with `## Источники:` and list the sources actually used.
+
+QUALITY SIGNALS FROM THE PIPELINE:
+- Context chunks: 8
+- Unique sources: 2
+- Unique domains: 4
+- Chunks with factual data: 3
+- Chunks with explicit dates: 3
+
+QUERY PROFILE:
+- Type: Factual/Brief
+- Intent: Get current price/rate with market data
+- Expected answer shape: 1-2 paragraphs
+- Critical attributes: freshness (< 24h preferred), numerical accuracy, source credibility
 
 QUESTION: bitcoin rate
 
 SOURCES:
 [1] Bitcoin price today, BTC to USD live price, marketcap and chart ...
-...
+ounts of coins via regular mining: Satoshi Nakamoto alone is believed to own over a million Bitcoin.
+Mining Bitcoins can be very profitable for miners, depending on the current hash rate and the price of Bitcoin. While the process of mining Bitcoins is complex, we discuss how long it takes to mine one Bitcoin on CoinMarketCap Alexandria — as we wrote above, mining Bitcoin is best understood as how long it takes to mine one block, as opposed to one Bitcoin. As of mid-September 2021, the Bitcoin mining reward is capped to 6.25 BTC after the 2020 halving , which is roughly $299,200 in Bitcoin price today.
+Please wait a moment.
+Please wait a moment.
+Disclaimer: This page may contain affiliate links. CoinMarketCap may be compensated if you visit any affiliate links and you take certain actions such as signing up and transacting with these affiliate platforms. Please refer to Affiliate Disclosure
+Bitcoin Market Cycles
+Bitcoin Treasury Holdings
+What Is Bitcoin (BTC)?
+Bitcoin is a decentralized cryptocurrency originally described in a 2008 whitepaper by a person, or group of people, using the alias Satoshi Nakamoto . It was launched soon after, in January 2009.
+ard is capped to 6.25 BTC after the 2020 halving , which is roughly $299,200 in Bitcoin price today.
+How Is the Bitcoin Network Secured?
+What Is Bitcoin’s Role as a Store of Value?
 
-WRITING REQUIREMENTS:
-1. Use only the provided sources.
-2. Organize the answer with clear `##` headings.
-3. Cite every factual claim with `[N]`.
+[2] Bitcoin Price: BTC Live Price Chart, Market Cap & News Today | CoinGecko
+have a disproportionate effect, causing the price to move more sharply than in more liquid markets.
+Macroeconomic Sensitivity: As Bitcoin has become a mainstream asset, its price has become increasingly sensitive to global macroeconomic factors, such as interest rate decisions by central banks, inflation data, and geopolitical events.
+Macroeconomic Sensitivity: As Bitcoin has become a mainstream asset, its price has become increasingly sensitive to global macroeconomic factors, such as interest rate decisions by central banks, inflation data, and geopolitical events.
+xed supply ensures no central authority can inflate the supply or devalue the holdings of its users.
+This scarcity is programmatically reinforced by the Bitcoin Halving , which systematically reduces the rate of new Bitcoin issuance, making it progressively scarcer over time as demand grows.
+The deflationary economic model contrasts sharply with inflationary fiat currencies. As demand grows while supply remains fixed and decreasing, basic economics suggests upward price press
+factors, such as interest rate decisions by central banks, inflation data, and geopolitical events.
+What Makes Bitcoin Valuable?
+Bitcoin's value stems from solving the double-spending problem without trusted intermediaries, creating the first truly scarce digital asset with a fixed supply cap of 21 million coins enforced by transparent, unchangeable code.
+
+
+References:
+  [1] Bitcoin price today, BTC to USD live price, marketcap and chart ... — https://coinmarketcap.com/currencies/bitcoin/
+  [2] Bitcoin Price: BTC Live Price Chart, Market Cap & News Today | CoinGecko — https://www.coingecko.com/en/coins/bitcoin
 
 ANSWER FORMAT:
 [Detailed answer with inline citations]
 
 ## Источники:
 [1] Source Title — URL
+[2] Another Source — URL
 ```
 
 </details>
