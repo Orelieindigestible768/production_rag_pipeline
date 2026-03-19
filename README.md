@@ -110,7 +110,6 @@ The pipeline is designed to degrade gracefully:
 - without `trafilatura`, extraction falls back to `BeautifulSoup`
 - configuration can come from dataclasses, YAML, or environment variables
 
----
 
 ## Requirements
 
@@ -122,7 +121,6 @@ The pipeline is designed to degrade gracefully:
 
 If you use only the base install, the pipeline still works with lexical fallbacks. Semantic reranking and richer extraction become available when optional extras are installed.
 
----
 
 ## Installation
 
@@ -147,7 +145,7 @@ Profiles:
 - `semantic`: adds `sentence-transformers`, `scikit-learn`, `numpy`
 - `full`: installs both optional groups
 
----
+
 
 ## Quick Start
 
@@ -203,7 +201,6 @@ ANSWER FORMAT:
 
 The final output is designed to be dropped directly into a local LLM, preserving source grounding and a strict citation format.
 
----
 
 ## Public API
 
@@ -283,7 +280,7 @@ export RAG_TOP_N_FETCH=8
 export RAG_FETCH_TIMEOUT=10
 ```
 
----
+
 
 ## Design Notes
 
