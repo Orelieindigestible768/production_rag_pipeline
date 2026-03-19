@@ -372,6 +372,7 @@ For contribution workflow, branch expectations, and review checklist, see [CONTR
 - [CONTRIBUTING.md](CONTRIBUTING.md) for contribution workflow and local setup
 - [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for participation expectations
 - [SECURITY.md](SECURITY.md) for vulnerability reporting
+- [How Perplexity Actually Searches the Internet](https://github.com/KazKozDev/production_rag_pipeline/wiki/How-Perplexity-Actually-Searches-the-Internet) for background on the retrieval and answer-shaping ideas behind this project
 - [Issues](https://github.com/KazKozDev/production_rag_pipeline/issues) for bugs and feature requests
 
 ---
