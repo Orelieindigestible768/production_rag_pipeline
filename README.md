@@ -16,7 +16,6 @@ Searches Bing + DuckDuckGo, filters noise before fetching, extracts clean conten
 [![Sentence Transformers](https://img.shields.io/badge/sentence--transformers-supported-d6d0c5.svg?style=flat)](https://www.sbert.net/)
 [![LLM Ready](https://img.shields.io/badge/output-LLM--ready%20prompts-c9cad6.svg?style=flat)](#how-it-works)
 
----
 
 ## Table of Contents
 
