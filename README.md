@@ -333,6 +333,7 @@ For contribution workflow, branch expectations, and review checklist, see [CONTR
 - [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for participation expectations
 - [SECURITY.md](SECURITY.md) for vulnerability reporting
 - [Issues](https://github.com/KazKozDev/production_rag_pipeline/issues) for bugs and feature requests
+- [Wiki](https://github.com/KazKozDev/production_rag_pipeline/wiki) for architecture deep-dive and research articles
 
 ---
 
